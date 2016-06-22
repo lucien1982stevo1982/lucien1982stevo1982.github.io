@@ -49,6 +49,7 @@ video {
     top: 0;
     overflow: hidden;
     z-index: -1;
+    background-image: url(../images/simple/miniature-video.jpg) no-repeat;
 }
 
 #fixe {
@@ -1033,10 +1034,3 @@ footer {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b234f', endColorstr='#7db9e8', GradientType=0);
     /* IE6-9 */
 }
-
-/*
-@media screen and (max-width: 540px) {
-    video {
-        width: 100%;
-    }
-}*/
