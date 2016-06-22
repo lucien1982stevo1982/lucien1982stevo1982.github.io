@@ -5,6 +5,10 @@ html {
     font-size: 62.5%;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
 body {
     color: #333;
     height: auto;
@@ -39,7 +43,7 @@ body {
 }
 
 video {
-    max-width: 100%;
+    min-width: 100%;
     min-height: 30%;
     left: 0;
     top: 0;
@@ -865,6 +869,22 @@ bouton.formulaire {
     /* IE6-9 */
 }
 
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+    border-radius: 10px;
+}
+
 .go_top {
     background: url('../images/bouton/bouton-top.png') no-repeat;
     display: none;
@@ -954,7 +974,7 @@ $gap: 16px;
 
 
 }
-&.content {
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1026,4 +1046,10 @@ footer {
     
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b234f', endColorstr='#7db9e8', GradientType=0);
     /* IE6-9 */
+}
+@media screen and (min-width: 200px) and (max-width: 320px) {
+    video {
+        width: 300px;
+        height: 30%;
+    }
 }
