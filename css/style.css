@@ -869,22 +869,6 @@ bouton.formulaire {
     /* IE6-9 */
 }
 
-input:not([type]),
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=url],
-input[type=time],
-input[type=date],
-input[type=datetime],
-input[type=datetime-local],
-input[type=tel],
-input[type=number],
-input[type=search],
-textarea.materialize-textarea {
-    border-radius: 10px;
-}
-
 .go_top {
     background: url('../images/bouton/bouton-top.png') no-repeat;
     display: none;
@@ -918,6 +902,8 @@ input[type=number],
 input[type=search],
 textarea.materialize-textarea {
     background-color: beige;
+    border-radius: 10px;
+    padding-bottom: 5px;
 }
 
 @media screen and (min-width: 200px) and (max-width: 640px) {
