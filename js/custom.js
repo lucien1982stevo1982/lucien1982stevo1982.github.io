@@ -38,6 +38,8 @@ $(document).ready(function () {
             }, speed); // Go
             return false;
         });
+        var v = document.getElementsByTagName("video")[0];
+        v.play();
     });
 });
 
