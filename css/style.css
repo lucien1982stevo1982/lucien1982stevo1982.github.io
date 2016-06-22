@@ -43,7 +43,7 @@ body {
 }
 
 video {
-    min-width: 100%;
+    width: 100%;
     min-height: 30%;
     left: 0;
     top: 0;
@@ -1033,8 +1033,10 @@ footer {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b234f', endColorstr='#7db9e8', GradientType=0);
     /* IE6-9 */
 }
-@media screen and (max-width: 320px) {
+
+/*
+@media screen and (max-width: 540px) {
     video {
-        width: 300px;
+        width: 100%;
     }
-}
+}*/
