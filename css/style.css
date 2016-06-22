@@ -938,6 +938,9 @@ textarea.materialize-textarea {
         margin-top: 240px;
         padding-right: 10px;
     }
+    video {
+        margin-top: -33px;
+    }
 }
 
 $gap: 16px;
