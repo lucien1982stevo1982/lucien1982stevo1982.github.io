@@ -16,6 +16,14 @@ body {
     font-size: .8em;
 }
 
+.menugauche {
+    padding-left: 180px;
+}
+
+.menudroite {
+    padding-right: 90px;
+}
+
 .loader {
     background: url('../images/svg/logo.svg') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
     cursor: wait;
@@ -46,7 +54,6 @@ video {
     width: 100%;
     min-height: 30%;
     left: 0;
-    top: 0;
     overflow: hidden;
     z-index: -1;
 }
@@ -74,19 +81,6 @@ video {
     border: #fff 3px;
     border-width: 5px;
     border-style: outset;
-}
-
-ul li {
-    background: rgb(11, 35, 79);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(11, 35, 79, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(125, 185, 232, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(11, 35, 79, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(125, 185, 232, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(11, 35, 79, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(125, 185, 232, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b234f', endColorstr='#7db9e8', GradientType=0);
-    /* IE6-9 */
 }
 
 .collapsible-header a {
@@ -156,15 +150,14 @@ h4 {
 }
 
 .bandeau {
-    width: 100%;
-    height: 150px;
     display: flex;
-    background: url(../svg/bandeau.svg)no-repeat;
 }
 
 .bandeau img {
-    width: 100px;
+    width: 110px;
     margin: auto;
+    top: 15px;
+    position: relative;
 }
 
 .bandeau a {
@@ -184,8 +177,6 @@ h4 {
 }
 
 nav {
-    padding-top: 20px;
-    padding-bottom: 90px;
     font-family: 'Playball', cursive;
 }
 
@@ -246,8 +237,8 @@ nav {
 
 #bouton {
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #bouton a:hover {
@@ -485,6 +476,19 @@ p span + span {
     margin-right: -23px;
     /* margin-left: 3px; */
     margin-top: 0px;
+}
+
+.slider .slides li {
+    background: rgb(48, 97, 188);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(11, 35, 79, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(125, 185, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(11, 35, 79) 0%, rgba(0, 0, 0, 1) 100%, rgba(125, 185, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #0b234f 0%, rgba(0, 0, 0, 1) 100%, rgba(125, 185, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0b234f', endColorstr='#7db9e8', GradientType=0);
+    /* IE6-9 */
 }
 
 .slider-wrapper {
@@ -906,7 +910,7 @@ textarea.materialize-textarea {
     padding-bottom: 5px;
 }
 
-#bgvid {
+.containervideo {
     /*    position: fixed;*/
     right: 0;
     bottom: 0;
@@ -916,7 +920,7 @@ textarea.materialize-textarea {
     height: auto;
     z-index: -999;
     overflow: hidden;
-    background: url(../images/simple/miniature-video.jpg) no-repeat;
+    background-image: url(../video/mer.web-progress.mp4) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -956,12 +960,9 @@ video {
         margin-top: 240px;
         padding-right: 10px;
     }
-    video {
-        margin-top: -60px;
-    }
-    #bgvid {
-        width: 400px;
-        height: auto;
+    .bandeau img {
+        width: 70px;
+        top: 10px;
     }
 }
 
