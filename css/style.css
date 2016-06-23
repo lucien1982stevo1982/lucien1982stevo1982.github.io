@@ -906,6 +906,24 @@ textarea.materialize-textarea {
     padding-bottom: 5px;
 }
 
+#bgvid {
+    /*    position: fixed;*/
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -999;
+    overflow: hidden;
+    background: url(../images/simple/miniature-video.jpg) no-repeat;
+    background-size: cover;
+}
+
+video {
+    display: block;
+}
+
 @media screen and (min-width: 200px) and (max-width: 640px) {
     .modal {
         max-height: 40%;
@@ -939,7 +957,11 @@ textarea.materialize-textarea {
         padding-right: 10px;
     }
     video {
-        margin-top: -33px;
+        margin-top: -60px;
+    }
+    #bgvid {
+        width: 400px;
+        height: auto;
     }
 }
 
